@@ -24,8 +24,25 @@ const myFavouriteFilm = {
 
     let person = {
         name: "Ben",
-        likesChocolate: true,
+        likesChocolate: false,
       };
 
 console.log(`Does ${person.name} like chocolate? ${person.likesChocolate}`)
-console.log(Object.keys(person))
+console.log(Object.keys(person)) 
+
+if (person.likesChocolate === true) {console.log("Ben loves chocolate")} else {console.log("Ben hates chocolate")}
+
+// Task 3
+let desiredPleasantry = "greeting";
+
+let bensPhrases = {
+  greeting: "Well hello there!",
+  farewell: "See you in another life, brother",
+  smallTalk: "Warm today, isn't it...",
+};
+
+console.log(bensPhrases['smallTalk']);
+
+bensPhrases['smallTalk'] = 'aup'
+
+console.log(bensPhrases['smallTalk'])
