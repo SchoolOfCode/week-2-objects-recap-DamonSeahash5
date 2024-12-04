@@ -43,6 +43,37 @@ let bensPhrases = {
 
 console.log(bensPhrases['smallTalk']);
 
-bensPhrases['smallTalk'] = 'aup'
+bensPhrases['smallTalk'] = 'aup';
 
-console.log(bensPhrases['smallTalk'])
+console.log(bensPhrases['smallTalk']);
+
+console.log(bensPhrases[desiredPleasantry]);
+
+//Task 4 - Reassigning Properties
+
+let me = {
+    firstName: "firstName",
+    lastName: "lastName",
+    isBootcamper: false,
+  };
+
+me['isBootcamper'] = true;
+console.log(me['isBootcamper']);
+
+//Task 5 - Nested Objects
+
+let communication = {
+    success: true,
+    payload: {
+      message: {
+        text: "Please send biscuits!",
+        priority: "URGENT",
+      },
+    },
+  };
+
+let messageTwo = communication.payload.message.text;
+console.log(messageTwo);
+
+//Task 6
+//no time right now :()
